@@ -48,6 +48,7 @@ body{
   .menu ul li a {
     text-decoration: none;
     color: white;
+    font-size: 25px;
   }
   
   .menu-toggle {
@@ -279,11 +280,13 @@ body{
   
   .text .p1{
     font-family: Patrick Hand, cursive;
+    font-size: 25px;
     margin-bottom: 6px;
   }
   
   .text .p2{
     font-family: Patrick Hand, cursive;
+    font-size: 20px;
     margin-bottom: 50px;
   }
   
@@ -301,6 +304,7 @@ body{
     color: white;
     font-family: Patrick Hand, cursive;
     font-size: 17px;
+    font-size: 20px;
   }
   
   .imgeffect img{
@@ -398,7 +402,7 @@ body{
     justify-content: center;
   }
   
-  .Skills .container .mainSkill .front , .back , .datasci, .tools{
+  .Skills .container .mainSkill .front , .tools{
     width: 100%;
     max-width: 500px;
     background: transparent;
@@ -407,7 +411,7 @@ body{
     padding: 18px 36px;
   }
   
-  .Skills .container .mainSkill .front h2, .back h2, .datasci h2, .tools h2{
+  .Skills .container .mainSkill .front h2, .tools h2{
     margin: 0%;
     padding: 0%;
     font-size: 20px;
@@ -426,8 +430,8 @@ body{
     margin-bottom: 20px;
   }
   
-  .Skills .container .mainSkill .front .frontSkill, .back .backSkill, .datasci .datasciSkill, .tools .toolsSkill{
-    font-size: 14px;
+  .Skills .container .mainSkill .front .frontSkill, .tools .toolsSkill{
+    font-size: 20px;
     font-weight: 400;
     font-family: Patrick Hand, cursive;
     color: black;
@@ -441,16 +445,6 @@ body{
   }
   
   .Skills .container .mainSkill .front .box img{
-    width: 30px;
-    height: 30px;
-  }
-  
-  .Skills .container .mainSkill .back .box img{
-    width: 30px;
-    height: 30px;
-  }
-  
-  .Skills .container .mainSkill .datasci .box img{
     width: 30px;
     height: 30px;
   }
@@ -481,7 +475,7 @@ body{
     .back h2,
     .datasci h2,
     .tools h2 {
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 16px;
     }
   
@@ -498,8 +492,6 @@ body{
     }
   
     .Skills .container .mainSkill .front .box img,
-    .Skills .container .mainSkill .back .box img,
-    .Skills .container .mainSkill .datasci .box img,
     .Skills .container .mainSkill .tools .box img {
       width: 25px;
       height: 25px;
@@ -514,25 +506,19 @@ body{
     }
   
     .Skills .container .mainSkill .front,
-    .back,
-    .datasci,
     .tools {
       padding: 10px 20px;
     }
   
     .Skills .container .mainSkill .front h2,
-    .back h2,
-    .datasci h2,
     .tools h2 {
       font-size: 16px;
       margin-bottom: 12px;
     }
   
     .Skills .container .mainSkill .front .frontSkill,
-    .back .backSkill,
-    .datasci .datasciSkill,
     .tools .toolsSkill {
-      font-size: 10px;
+      font-size: 16px;
       padding: 8px 12px;
     }
   
@@ -541,11 +527,10 @@ body{
     }
   
     .Skills .container .mainSkill .front .box img,
-    .Skills .container .mainSkill .back .box img,
-    .Skills .container .mainSkill .datasci .box img,
     .Skills .container .mainSkill .tools .box img {
       width: 20px;
       height: 20px;
+      
     }
   }
   
@@ -566,6 +551,7 @@ body{
   
   h1 {
     text-align: center;
+    font-size: 30px;
     font-weight: 300;
     color: black;
     font-family: 'Leckerli One', sans-serif;
@@ -647,6 +633,7 @@ body{
   .timeline-content span {
     font-size: 15px;
     color: #a4a4a4;
+    font-size: 20px;
   }
   
   .timeline-content p {
@@ -654,6 +641,7 @@ body{
     line-height: 1.5em;
     word-spacing: 1px;
     color: #888;
+    font-size: 20px;
   }
   
   
@@ -720,7 +708,12 @@ body{
   
   .card:nth-child(1) .box .icon .iconBox,
   .card:nth-child(2) .box .icon .iconBox,
-  .card:nth-child(3) .box .icon .iconBox {
+  .card:nth-child(3) .box .icon .iconBox,
+  .card:nth-child(4) .box .icon .iconBox,
+  .card:nth-child(5) .box .icon .iconBox,
+  .card:nth-child(6) .box .icon .iconBox,
+  .card:nth-child(7) .box .icon .iconBox,
+  .card:nth-child(8) .box .icon .iconBox {
     background: #695aa6;
   }
   
@@ -764,6 +757,7 @@ body{
     margin: 0.625rem 0 1.25rem;
     font-family: 'Patrick Hand', cursive;
     color: #565656;
+    font-size: 20px;
   }
   
   .card-inner {
@@ -905,6 +899,21 @@ body{
     justify-content: space-evenly;
     align-items: center;
   }
+
+  .con {
+  display: flex;
+  gap: 20px; /* spacing between cards */
+  flex-wrap: wrap; /* optional: wrap on smaller screens */
+  justify-content: center; /* center the cards */
+}
+
+.article-card {
+  width: 300px; /* or any fixed/flexible size */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
   
   .article-card {
     width: 350px;
@@ -943,7 +952,7 @@ body{
   }
   
   .article-card .title {
-    font-size: 17px;
+    font-size: 20px;
     color: #212529;
   }
     
@@ -954,11 +963,12 @@ body{
       margin-bottom: 0;
       border: 1px solid black;
       border-radius: 5px;
-      background: transparent;
-      color: #212529;
+      background-color: #695aa6;
+      color: #fff;
       font-size: 14px;
       cursor: pointer;
       transition: all 300ms;
+      font-size: 20px;
   }
   /* blogs section CSS ends here */
   /* ---------------------------------------------------------------------------- */
@@ -1003,6 +1013,7 @@ body{
   .contact-info p {
     margin: 10px 0;
     line-height: 1.5;
+    font-size: 20px;
   }
   
   .social-links {
@@ -1029,6 +1040,7 @@ body{
   .contact-form label {
     margin-bottom: 8px;
     font-weight: bold;
+    font-size: 20px;
   }
   
   .contact-form input,
@@ -1046,6 +1058,7 @@ body{
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 20px;
   }
   
   .contact-form button:hover {
